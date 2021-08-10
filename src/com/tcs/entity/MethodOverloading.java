@@ -31,5 +31,12 @@ class Employee1 extends User1 { //inheritance
 	public void work() {
 		System.out.println("Employee is working");
 	}
+	
+	//overload
+	public void work (boolean duration) {
+		System.out.println("user is working for " +duration+ "hours ");
+	}
+	
+	
 }
 
