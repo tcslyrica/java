@@ -3,18 +3,27 @@ package com.tcs.entity;
 public class User {
 	private String name;
 	private Long mobilenumber;
+	private ROLE role;
 	private byte age;   //data encapsulation
 	
+	//constructor
 	public void workout() {
 		System.out.println(name + "is working out..");
 	}
 	
-	
+	//custom constructor
 	public User(String name, int i, byte age) {
-		super();
 		this.name = name;
 		this.mobilenumber = mobilenumber;
 		this.age = age;
+	}
+	
+	//overloaded constructor
+	public User(String name, Long mobilenumber) {
+		super(); //call super class constructor
+		this.name = name;
+		this.mobilenumber = mobilenumber;
+		
 	}
 
 	public String getName() {
