@@ -16,7 +16,10 @@ public class StaticDemo {
 	}
 
 }
-
+// v 
+//wx
+//yz
+//d
 class Bank{
 	
 	static int counter; //static variable 
