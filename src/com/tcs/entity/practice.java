@@ -1,7 +1,7 @@
 package com.tcs.entity;
 
 //public class practice {
-//	 public static void main(String args[]) {
+	// public static void main(String args[]) {
 //		    for (int i = 0; i<5 ;i++) {
 //		      switch(i) {
 //		        case 0: System.out.print("v ");break;
@@ -244,10 +244,91 @@ package com.tcs.entity;
 //	}}
 //	
 //i1k1i2j1i3j2
+
+//static int m1(String s, int i) {
+//    System.out.print(s + i);
+//    return i;
+//  }
+//  public static void main (String[] args) {
+//    int j = 0;
+//    for (int i = m1("A",0); m1("B",i) < 2; m1("C",++i)) {
+//      m1("J",++j);
+//    }
+//}}
 	
+//Compile time error	
+
+
+//    int i = 0, j = 9;
+//    do {
+//      i++;
+//      if (j-- < i++) {break;}
+//    } while (i < 5);
+//    System.out.print(i + "," + j);
+//}}
 	
+//		 int i = 0, j = 9;
+//		    while (i++ <= j--) {i++; if (j < 5) break;}
+//		    System.out.print(i + "," + j);
+//		}}
+//	
+//		 int i = 0, j = 9;
+//		    do {
+//		      if (j < 4) {break;} else if (j-- < 7) {continue;}
+//		      i++;
+//		    } while (i++ < 7);
+//		    System.out.print(i + "," + j);
+//		}}
+//	
+//8,4
 	
-	
-	
-	
+//		 int i = 0, j = 0, k = 0;
+//		 label1:
+//		     for (;;) { i++;
+//		 label2:
+//		       do {
+//		         k = i + j;
+//		         switch (k) {
+//		           case 0: continue label2;
+//		           case 1: continue label1;
+//		           case 2: break;
+//		           case 3: break label2;
+//		           case 4: break label1;
+//		           default: break label1;
+//		         }
+//		       } while (++j<5);
+//		     }
+//		     System.out.println(i + "," + j);
+//		 }}
+
+//3,1
+		 
+		 
+//
+//    int h = 0, i = 0, j = 0, k = 0;
+//label1:
+//    for (;;) { h++;
+//label2:
+//      do { i++; k = h + i + j;
+//        switch (k) {
+//          default: break label1;
+//          case 1: continue label1;
+//          case 2: break;
+//          case 3: break label2;
+//          case 4: continue label2;
+//          case 5: continue label1;
+//        }
+//      } while (++j < 5);
+//    }
+//    System.out.println(h + "," + i + "," + j);
+//}}
+//
+//1,3,2
+		 
+		 
+		 
+		 
+		 
+		 
+		 
 	
